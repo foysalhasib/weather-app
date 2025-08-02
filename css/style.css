@@ -1,0 +1,102 @@
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+    /* সব এলিমেন্টে ডিফল্ট মার্জিন ও প্যাডিং সরিয়ে দেয় এবং একইভাবে বক্স কাউন্ট করে */
+
+    body {
+      min-height: 100vh; /* পুরো স্ক্রিন জুড়ে বডি থাকবে */
+      background: url(../img/background.jpg); /* ব্যাকগ্রাউন্ডে ছবি সেট করা */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex; /* বক্সকে মাঝখানে আনতে flex ব্যবহার করা হয়েছে */
+      justify-content: center;
+      align-items: center;
+      color: white; /* সব লেখা সাদা হবে */
+      padding: 20px;
+    }
+
+    .weather-box {
+      background: rgba(255, 255, 255, 0.1); /* হালকা সাদা ব্যাকগ্রাউন্ড */
+      padding: 32px;
+      border-radius: 20px; /* কোণগুলো গোল করা */
+      text-align: center;
+      backdrop-filter: blur(10px); /* ব্যাকগ্রাউন্ড একটু ঝাপসা দেখায় */
+      box-shadow: 0 0 15px rgba(0,0,0,0.3); /* ছায়া দেয় */
+      width: 380px; /* ফিক্সড সাইজ */
+      border: 2px solid #fff;
+    }
+
+    input {
+      width: 60%; /* ইনপুট ফিল্ডের প্রস্থ */
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    .weather-icon {
+      font-size: 100px;
+      margin: 15px 0;
+    }
+
+    .temp {
+      font-size: 46px;
+      font-weight: bold;
+    }
+
+    .desc {
+      text-transform: capitalize;
+      margin: 8px 0;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 36px;
+    }
+
+    .info div {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    #humidity, #wind {
+      font-size: 26px;
+    }
+
+    /* মোবাইল ফোনে ভালোভাবে দেখানোর জন্য responsive ডিজাইন */
+    @media screen and (max-width: 480px) {
+      .weather-box {
+        width: 100%;
+        padding: 24px;
+      }
+      .weather-icon {
+      font-size: 70px;
+      margin: 12px 0;
+    }
+
+    .temp {
+      font-size: 34px;
+      font-weight: bold;
+    }
+    .info div {
+      font-size: 12px;
+    }
+
+    #humidity, #wind {
+      font-size: 20px;
+    }
+    }
+ 

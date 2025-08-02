@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head>
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+  <title>Weather App</title> 
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+  <!-- Weather app এর পুরো UI এখানে -->
+
+  <div class="weather-box">
+    <div>
+      <input id="city" placeholder="Enter city" /> <!-- ইউজার এখানে শহরের নাম দিবে -->
+      <button onclick="getWeather()">Search</button> <!-- বাটন ক্লিক করলে getWeather() ফাংশন চলবে -->
+    </div>
+    <div class="weather-icon" id="icon">☀️</div> <!-- আবহাওয়ার আইকন -->
+    <div class="temp" id="temp">--°C</div> <!-- তাপমাত্রা -->
+    <div class="desc" id="desc">Weather</div> <!-- আবহাওয়ার বর্ণনা -->
+    <div class="info">
+      <div><strong id="humidity">--%</strong><br>Humidity</div> <!-- আর্দ্রতা -->
+      <div><strong id="wind">-- km/h</strong><br>Wind</div> <!-- বাতাসের গতি -->
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
