@@ -79,7 +79,8 @@
     /* মোবাইল ফোনে ভালোভাবে দেখানোর জন্য responsive ডিজাইন */
     @media screen and (max-width: 480px) {
       .weather-box {
-        width: 87%;
+        width: 90%;
+        height: 85vh;
         padding: 24px;
       }
       .weather-icon {
