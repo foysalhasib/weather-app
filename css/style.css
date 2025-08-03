@@ -80,22 +80,22 @@
     @media screen and (max-width: 480px) {
       .weather-box {
         width: 90%;
-        height: 85vh;
         padding: 24px;
       }
+
       .weather-icon {
       font-size: 70px;
-      margin: 38px 0 ;
+      margin: 40px 0 ;
     }
 
     .temp {
       font-size: 34px;
       font-weight: bold;
-      margin-top: 16px;
+      margin-top: 20px;
     }
     .info div {
       font-size: 12px;
-      margin-top: 16px;
+      margin-top: 20px;
     }
 
     #humidity, #wind {
